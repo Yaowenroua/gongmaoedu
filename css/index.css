@@ -1,0 +1,102 @@
+body{
+	background-color: #f3f5f7;
+}
+header{
+	width: 1300px;
+	height: 100px;
+	margin: 0 auto;/*居中的标准写法*/
+	padding-top: 30px;
+}
+.logo{
+	width: 195px;
+	height: 100px;
+	float: left;
+}
+.logo a{
+	display: block;
+	width: 195px;
+	height: 40px;
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999px;/*隐藏链接里面的文字*/
+	overflow: hidden;/*溢出部分隐藏*/
+}
+nav{
+	float: left;
+	margin-left: 20px;
+}
+nav li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+}
+nav li a{
+	display: block;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+}
+nav li a:hover{
+	border-bottom: 2px solid #00a4ff;
+}
+.search{
+	width: 410px;
+	height: 40px;
+	float: left;
+	margin-left: 160px
+}
+.search input{
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	outline: none;/*轮廓线 点击之后出现*/
+	padding-left: 10px;
+	float: left;
+}
+.search button{
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	float: left;
+	background: url(../images/fa-search.png);
+}
+.personal{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt, .personal dd{
+	float: left;
+}
+.personal s{
+	position: relative;
+	padding: 0 20px;
+	text-decoration: none;
+} 
+.personal s::before{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+.personal span img{
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+}
+.banner{
+	height: 420px;
+	background-color: #1c036c;
+}
+.inner{
+	height: 420px;
+	/*background:url(../iamges/banner.jpg)*/
+	position: relative;
+}
